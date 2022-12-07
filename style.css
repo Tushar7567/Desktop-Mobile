@@ -1,0 +1,42 @@
+*{
+    background-color:black ;
+    color: white;
+}
+h2{
+    text-align: center;
+    text-shadow: 3px 3px 5px ;
+}
+.cont{
+    margin-top: 200px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+.leaf{
+    width: 100px;
+    height: 100px;
+    transition: all  1s linear;
+    background-color: teal;
+    border-radius: 0 70px ;
+    box-shadow: 20px 20px 20px whitesmoke;
+}
+.leaf:hover{
+    transform: rotate(500deg);
+}
+
+@media (max-width: 400px){
+    .cont{
+        margin-top: 50px;
+        flex-direction: column;
+    } 
+    .leaf{
+        transition: all 1s linear;
+        margin-left: 140px;
+        /* transition: all 1s linear ; */
+
+    }
+    .leaf:hover{
+        transform: rotate(500deg);
+    }
+    
+}
